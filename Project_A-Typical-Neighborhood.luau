@@ -42,8 +42,18 @@ local function GetRoot(): Part
     return hum.RootPart
 end
 
+local function ActivateFarming(mode: boolean)
+    
+end
+
 --// Script
 local farmTab = window:CreateTab("Farming")
+farmTab:CreateButton({
+    Name = "Testing",
+    Callback = function()
+        print("test")
+    end
+})
 
 --// Signals
 plr.CharacterAdded:Connect(UpdateCharVariable)
